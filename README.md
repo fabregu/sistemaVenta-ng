@@ -1,27 +1,29 @@
-# SistemaventaNg
+# Sistema Venta Front Angular 14
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Este proyecto es una aplicación de sistema de ventas desarrollada con **Angular 14**, que incluye funcionalidades modernas y paquetes populares para mejorar la experiencia del usuario y el manejo de datos.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Tecnologías y Paquetes Utilizados
 
-## Code scaffolding
+- **Angular CLI**: 14.2.13
+- **Node.js**: Recomendado **v16.x**
+- **SweetAlert2**: Para alertas personalizadas y elegantes
+- **Moment.js**: Para el manejo de fechas y tiempos
+- **@angular/material**: Componentes UI de Material Design
+- **@angular/material-moment-adapter**: Adaptador para usar Moment con `mat-datepicker`
+- **Chart.js** + **ng2-charts**: Para gráficos estadísticos interactivos
+- **xlsx (SheetJS)**: Para exportar/importar archivos Excel
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📦 Requisitos Previos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js v16.x
+- Angular CLI 14.2.13
 
-## Running unit tests
+Puedes verificar tus versiones con:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+node -v
+ng version
