@@ -18,7 +18,6 @@ import { SharedModule } from './Reutilizables/shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     SharedModule
   ],
   providers: [],
