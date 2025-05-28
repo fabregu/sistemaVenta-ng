@@ -33,7 +33,7 @@ export class ModalUsuarioComponent implements OnInit {
         correo: ["", Validators.required],
         idRol: ["", Validators.required],
         clave: ['', Validators.required],
-        esActivo: ['1', Validators.required]
+        esActivo: [1, Validators.required]
       })
       
       if(this.datosUsuario != null) {
@@ -41,7 +41,7 @@ export class ModalUsuarioComponent implements OnInit {
         this.botonAccion = "Actualizar"
       }
 
-      this._rolService.lista().subscribe({
+      this._rolService.lista().subscribe({  
         next: (data) => {
           if(data.status) this.listaRoles = data.value;
         },
@@ -56,7 +56,7 @@ export class ModalUsuarioComponent implements OnInit {
         correo: this.datosUsuario.correo,
         idRol: this.datosUsuario.idRol,
         clave: this.datosUsuario.clave,
-        esActivo: this.datosUsuario.esActivo.toString() 
+        esActivo: this.datosUsuario.esActivo 
       })
     }
     console.log("Datos del usuario al editar:", this.datosUsuario);
@@ -72,7 +72,6 @@ export class ModalUsuarioComponent implements OnInit {
       clave: this.frmUsuario.value.clave,
       esActivo: parseInt(this.frmUsuario.value.esActivo)
     }
-
     if(this.datosUsuario == null) {
       this._usuarioService.guardar(_usuario).subscribe({
         next: (data) => {
