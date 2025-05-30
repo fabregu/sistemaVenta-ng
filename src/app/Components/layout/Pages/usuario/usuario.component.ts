@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, TRANSLATIONS } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -96,5 +96,4 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
       }
     })
   }
-
 }

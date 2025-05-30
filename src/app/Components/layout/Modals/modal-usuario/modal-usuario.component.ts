@@ -59,7 +59,6 @@ export class ModalUsuarioComponent implements OnInit {
         esActivo: this.datosUsuario.esActivo 
       })
     }
-    console.log("Datos del usuario al editar:", this.datosUsuario);
   }
 
   guardarUsuario() {
