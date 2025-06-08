@@ -11,7 +11,7 @@ export class DashboardService {
   private urlApi:string = environment.endpoint + "Dashboard/"
   constructor(private http:HttpClient) { }
 
-  lista(): Observable<ResponseApi> {
+  resumen(): Observable<ResponseApi> {
        return this.http.get<ResponseApi>(`${this.urlApi}Resumen`)
     }
 }
