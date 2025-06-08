@@ -55,7 +55,7 @@ export class DashboardComponent implements OnInit {
 
           const labelTemp: any[] = arrayData.map((item) => item.fecha);
           const dataTemp: any[] = arrayData.map((item) => item.total);
-          console.log("label: ", labelTemp, "data: ", dataTemp);
+          //console.log("label: ", labelTemp, "data: ", dataTemp);
           this.mostrarGraficoVentas(labelTemp, dataTemp);
         }
       },
